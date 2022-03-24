@@ -9,7 +9,7 @@ symbols = df['symbol']
 priceList = []
 
 for sym in symbols:
-    response = requests.get(f'https://cloud.iexapis.com/stable/tops?token={token}&symbol={sym}')
+    response = requests.get(f'https://cloud.iexapis.com/stable/tops?token={token}&symbols={sym}')
 
     json_data = json.loads(response.text)
 
