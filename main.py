@@ -3,15 +3,13 @@ import pandas as pd
 import csv
 import json
 
-# token = # pk_6e362f638541485ab963231ed791e3d4
-
 df = pd.read_csv("test.csv") 
 
 symbols = df['symbol']
 priceList = []
 
 for sym in symbols:
-    response = requests.get(f'https://cloud.iexapis.com/stable/tops?token=pk_6e362f638541485ab963231ed791e3d4&symbols={sym}')
+    response = requests.get(f'https://cloud.iexapis.com/stable/tops?token={token}&symbol={sym}')
 
     json_data = json.loads(response.text)
 
