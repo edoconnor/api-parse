@@ -1,7 +1,6 @@
 import pandas as pd
 import requests
 import csv
-import time
 
 df = pd.read_csv("dow30.csv")
 
