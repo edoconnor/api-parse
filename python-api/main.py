@@ -13,7 +13,7 @@ peg_ratio = []
 
 for symbol in symbols:
     response = requests.get(
-        f'https://www.alphavantage.co/query?function=OVERVIEW&symbol={symbol}&apikey=ORJ11EZ9GMGBZRNK')
+        f'https://www.alphavantage.co/query?function=OVERVIEW&symbol={symbol}&apikey=XXXXXXXX')
 
     data = response.json()
 
