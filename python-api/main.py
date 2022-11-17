@@ -30,4 +30,6 @@ df['beta'] = beta_value
 df['peg'] = peg_ratio
 
 df = df[['name', 'symbol', 'pe', 'peg', 'beta']]
-print(df)
+df.to_csv('dow30_data.csv', index=False)
+# -----------------------------------------
+# df.to_csv('dow30_data.csv', header=None,index=False)
