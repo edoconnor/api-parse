@@ -1,0 +1,44 @@
+Features:
+1. COLUMN SORT
+2. Format large numbers
+3. CACHE to DB
+4. ADD a/o DATE for data
+
+------symbol input:
+symbol = yf.Ticker(input("Enter symbol: "))
+df = pd.read_csv("dow30.csv")
+
+------API - FOCUS Fields:
+fullTimeEmployees
+marketCap
+totalRevenue
+grossProfits
+
+profitMargins
+grossMargins
+
+pegRatio
+forwardPE
+trailingPE
+revenueGrowth
+earningsGrowth
+
+averageVolume10days
+averageVolume
+
+fiftyDayAverage
+twoHundredDayAverage
+
+fiftyTwoWeekHigh
+fiftyTwoWeekLow
+------
+
+today = dt.datetime.today().strftime('%m%d%Y') # to set the date in the csv filename
+pd.to_csv('filename_{}.csv'.format(today))
+------
+
+FORMAT PANDAS COLUMN - ADD COMMA to THOUSANDS
+df2 = df.copy()
+df2.loc[:, "mktcap"] = df2["mktcap"].map('{:,d}'.format)
+
+------
