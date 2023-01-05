@@ -1,0 +1,3 @@
+print(f"Driver #{number}: {name} [{country}]")
+
+df = pd.read_csv("drivers.csv")
