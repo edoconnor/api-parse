@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <table id="dow-table" class="table table-striped table-hover text-center">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">company</th>
+        <th scope="col" class="text-center">symbol</th>
+        <th scope="col" class="text-center">employee</th>
+        <th scope="col" class="text-center">mktcap</th>
+        <th scope="col" class="text-center">revenue</th>
+        <th scope="col" class="text-center">profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stock in stocks %}
+      <tr>
+        <td>{{ stock.name }}</td>
+        <td>{{ stock.symbol }}</td>
+        <td>{{ "{:,}".format(stock.employee) }}</td>
+        <td>{{ "${:,}".format(stock.mktcap) }}</td>
+        <td>{{ "${:,}".format(stock.revenue) }}</td>
+        <td>{{ "${:,}".format(stock.profit) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

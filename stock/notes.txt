@@ -1,0 +1,7 @@
+After creating DB (using "create_db.py"):
+
+(using new bash cli ...)
+sqlite3
+
+sqlite> .open <db_name>.db
+sqlite> select * from <table_name>;
