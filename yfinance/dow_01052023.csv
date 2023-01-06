@@ -1,4 +1,4 @@
-,name,symbol,price,employee,mktcap,revenue,profit
+id,name,symbol,price,employee,mktcap,revenue,profit
 0,3M Company,MMM,122.77,95000,67860254720,34761998336,16579000000
 1,American Express Company,AXP,146.6099,64000,109551755264,49622999040,30799000000
 2,Amgen Inc.,AMGN,265.12,24200,141462470656,26329999360,19525000000
