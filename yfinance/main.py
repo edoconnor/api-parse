@@ -44,13 +44,4 @@ df2 = df[['name', 'symbol', 'price', 'employee', 'mktcap', 'revenue', 'profit']]
 print(df2)
 
 df = df2
-df.to_csv('dow_{}.csv'.format(today))
-
-# ------------------------
-begin = time.time()
-for i in range(5):
-    print(".....")
-time.sleep(1)
-end = time.time()
-print(f"Total runtime: {end - begin}")
-# ------------------------
+df.to_csv('dow_{}.csv'.format(today)) 
